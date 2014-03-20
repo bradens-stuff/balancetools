@@ -1,0 +1,27 @@
+To configure:
+
+adjust first line of Makefile as necessary
+
+  OPTS=-DBANK_C -DWALLET_C -DPADDING=\"4\"
+
+To use:
+
+  Usage: dollar [-b|-w|-i] [amount]
+
+-b: bank
+example:
+$ dollar -b 100
+  Bank:   $ 100
+
+-w: wallet
+example:
+$ dollar -w 100
+  Wallet: $ 100
+
+-i: init
+example:
+$ dollar -i
+Dollar{
+  Bank:   $0 000
+  Wallet: $  000
+}

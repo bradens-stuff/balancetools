@@ -1,0 +1,17 @@
+balance tools by Braden Best
+
+To install:
+
+  sudo make install
+
+To uninstall:
+
+  sudo make uninstall
+
+To use:
+
+  See the respective README files of each module
+
+To configure:
+
+  Edit the Makefiles for each module to configure them

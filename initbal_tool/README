@@ -1,0 +1,11 @@
+To configure:
+
+adjust first line of Makefile as necessary
+
+  OPTS=-DFILENAME=\"balance\"
+
+To use:
+
+  initbal
+
+initbal just creates the file (see FILENAME constant) where all the balance tracking is held

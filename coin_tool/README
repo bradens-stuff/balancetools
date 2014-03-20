@@ -1,0 +1,34 @@
+To configure:
+
+adjust first line of Makefile as necessary
+
+  OPTS=-DBANK_C -DPOCKET_C -DROLLS_C -DPADDING=\"2\"
+
+To use:
+
+  usage: coin [-b|-p|-r|-i] [quarters] [dimes] [nickels] [pennies]
+
+-b: bank
+example:
+$ coin -b 1 2 3 4
+  Bank:    1Q,  2D,  3N,  4P
+
+-p: pennies
+example:
+$ coin -p 1 2 3 4
+  Pocket:  1Q,  2D,  3N,  4P
+
+-r: rolls
+example:
+$ coin -r 1 2 3 4
+  Rolls{
+    $10.00(40)  Quarters: 1
+    $ 5.00(50)  Dimes:    2
+    $ 2.00(40)  Nickels:  3
+    $ 0.50(50)  Pennies:  4
+  }
+
+-i: init
+example:
+$ coin -i
+

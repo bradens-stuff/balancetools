@@ -1,0 +1,13 @@
+To configure:
+
+Defaults are defined in defs.h 
+
+Adjust as necessary via Makefile.
+
+  OPTS=-DDEFAULT_WAGE=7.5 -DINCOME_TAX=9.0
+
+To use:
+
+  wagecalculator [hours] [minutes] [wage]
+
+if no arguments are given, their respective defaults are used instead
